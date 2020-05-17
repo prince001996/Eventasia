@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+<div class="a4-ticket">
+
+    <div class="a4-content">
+        <div class="event-header">
+            <div class="event-logo">
+                <img src="logo.svg" width="143">
+            </div>
+            <div class="event-meta">
+                Decon Gent<br>
+                Lammerstraat 24<br>
+                9000 Gent
+            </div>
+        </div>
+        <div class="event-info">
+            <p>15 november 2015</p>
+            <h2>Floating Points/Tycho</h2>
+        </div>
+        <div class="ticket-info">
+
+            <div class="barcode-holder">
+                <div class="barcode">{{ ticket.barcode_code128 }}</div><br/>
+                <div class="barcode-hint">{{ ticket.barcode_text }}</div>
+            </div>
+
+            <div class="ticket-info-left">
+                <p>
+                    Johan Ronsse<br>
+                    Korte Leemstraat 118<br>
+                    2018 - Antwerpen
+                </p>
+            </div>
+            <div class="ticket-info-right">
+                Regular<br>
+            <span class="ticket-info-price">
+              <span>€</span>{{ ticket.price | number_format(2) }}
+            </span>
+                </p>
+            </div>
+        </div>
+        <div class="event-calendar">
+            <h2>Bekijk de komende maanden ook:</h2>
+
+            <div class="months">
+                <div class="month">
+                    <h3>September</h3>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>15</td>
+                            <td>Le Peuple de L’Herbe</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>Die Antwoord</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>Santigold</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>Underworld</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>Bonobo (live)</td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>John Hopkins</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="month">
+                    <h3>Oktober</h3>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>15 </td>
+                            <td>Le Peuple de L’Herbe</td>
+                        </tr>
+                        <tr>
+                            <td>17 </td>
+                            <td>Die Antwoord</td>
+                        </tr>
+                        <tr>
+                            <td>18 </td>
+                            <td>Santigold</td>
+                        </tr>
+                        <tr>
+                            <td>22 </td>
+                            <td>Underworld</td>
+                        </tr>
+                        <tr>
+                            <td>23 </td>
+                            <td>Bonobo (live)</td>
+                        </tr>
+                        <tr>
+                            <td>28 </td>
+                            <td>John Hopkins</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="month">
+                    <h3>November</h3>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>15</td>
+                            <td>Le Peuple de L’Herbe</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>Die Antwoord</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>Santigold</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>Underworld</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>Bonobo (live)</td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>John Hopkins</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="legal">
+            <p>Dit is uw persoonlijk ticket. Biedt het aan aan de wachtrij voor de ingang. Dit ticket is op naam en kan slechts éénmaal gebruikt worden. Eens de toegang verschaft is kan u het evenement niet meer opnieuw binnenkomen. Trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="sponsors-holder">
+            <img src="sponsors.png" alt="Sponsors" class="sponsors">
+        </div>
+    </div>
+</div>
+</body>
+</html>
